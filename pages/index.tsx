@@ -7,6 +7,9 @@ const a: "a" = "a";
 const aa: null = null;
 const und: undefined = undefined;
 
+const wid: "wid" = "wid";
+let bar = wid;
+
 const double = (x: number): number | undefined => {
   if (x > 0) {
     return;
@@ -15,17 +18,7 @@ const double = (x: number): number | undefined => {
 };
 
 const Home = () => {
-  return (
-    <div className="">
-      <Comp />
-    </div>
-  );
-};
-
-const Comp = (props: { type?: true }) => {
-  if (props.type) {
-  }
-  return <>テストプレイ</>;
+  return <div className=""></div>;
 };
 
 export default Home;
