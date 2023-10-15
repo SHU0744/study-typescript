@@ -27,7 +27,15 @@ if (typeof array3 === "string") {
 const foo = (): void => {
   alert("a");
 };
-
+let obj: { [key: string]: unknown } = {
+  a: true,
+  b: 123,
+};
+let obj2: { [key: string]: { foo: unknown } } = {
+  a: {
+    foo: "a",
+  },
+};
 const foo2 = (bar: "a" | "b") => {
   switch (bar) {
     case "a":
